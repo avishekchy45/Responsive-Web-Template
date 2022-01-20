@@ -1,0 +1,129 @@
+/*Designed by AVISHEK CHOWDHURY(MAC)*/
+
+/*GRID STTYLE*/
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+[class*="col-"] {
+  position: relative;
+  float: left;
+}
+[class*="row-"]::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="row-"] {
+  padding: 5px;
+  margin: 5px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Design*/
+body {
+  background-image: url("bg.png");
+  background-size: 100% 100%;
+  border: 5px solid red;
+  background-color: gray;
+}
+.header {
+  border: 4px dotted blue;
+  background-color: royalblue;
+  text-align: center;
+  padding: 15px;
+}
+.navbar {
+  border: 3px dotted yellow;
+  background-color: yellowgreen;
+  text-align: right;
+  padding: 10px;
+}
+.menu {
+  text-align: left;
+  padding: 5px;
+}
+.main {
+  text-align: center;
+  padding: 5px;
+}
+.sidebar {
+  text-align: right;
+  padding: 5px;
+}
+.footer {
+  border: 4px dotted blue;
+  background-color: royalblue;
+  text-align: center;
+  padding: 15px;
+}
+.row-1 {
+  position: sticky;
+  top: 0;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: blueviolet;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: black;
+}
+
+/*FOR MOBILE/TABLET SMALL SCREEN*/
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  /*.sidebar {
+    display: none;
+  }*/
+}
